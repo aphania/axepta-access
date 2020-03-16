@@ -1,7 +1,7 @@
 # axepta-access *request builder / response identify  &amp; decode*
 ## Request page
 
-	### Init the class
+	** Init the class**
 
 			$paymentRequest = new Axepta($Your_HMAC);
 			$paymentRequest->setCryptKey($Your_CRYPTKEY);
