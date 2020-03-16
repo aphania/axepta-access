@@ -1,5 +1,5 @@
-# axepta-access *request builder / response identify  &amp; decode*
-## Request page
+axepta-access *request builder / response identify  &amp; decode*
+Request page
 
 	** Init the class**
 
