@@ -1,13 +1,12 @@
-# axepta-access
-request builder / response identify  &amp; decode
-# REQUEST PAGE
+# axepta-access *request builder / response identify  &amp; decode*
+## Request page
 
-	init the class
+	###Init the class
 
 			$paymentRequest = new Axepta($Your_HMAC);
 			$paymentRequest->setCryptKey($Your_CRYPTKEY);
 			
-	Set your data in :
+	###Set your data in :
 
 			$paymentRequest->setUrl(Axepta::PAYSSL);
 			$paymentRequest->setMerchantID($Your_MERCHANTID);
@@ -34,7 +33,7 @@ request builder / response identify  &amp; decode
 			$data = $paymentRequest->getBfishCrypt();	// run Crypt & retrieve Data
 			$len = $paymentRequest->getLen();			// retrieve Crypt length
 
-	fill your form
+	###Fill your form
 
 		   echo "<html><body><form name=\"redirectForm\" method=\"GET\" action=\"" . $paymentRequest->getUrl() . "\">" .
 				 "<input type=\"hidden\" name=\"MerchantID\" value=\"". $paymentRequest->getMerchantID() . "\">" .
@@ -49,9 +48,9 @@ request builder / response identify  &amp; decode
 				 "<script type=\"text/javascript\">document.redirectForm.submit(); </script>" .
 				 "</body></html>";
 
-# RESPONSE PAGE
+## Response page
 
-	Get the request response && check 
+	###Get the request response && check 
 
 		$paymentResponse = new Axepta($Your_HMAC);
 		$paymentResponse->setCryptKey($Your_CRYPTKEY);
