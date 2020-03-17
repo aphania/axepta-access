@@ -51,7 +51,7 @@
 
 ## Response page
 
-### Get the request response && check 
+### Get the request response & check 
 
 		$paymentResponse = new Axepta($Your_HMAC);
 		$paymentResponse->setCryptKey($Your_CRYPTKEY);
