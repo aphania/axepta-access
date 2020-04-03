@@ -11,7 +11,7 @@
 
 			$paymentRequest->setUrl(Axepta::PAYSSL);
 			$paymentRequest->setMerchantID($Your_MERCHANTID);
-			$paymentRequest->setTransID("AssociationMR" . $Your_Payment_id."/".rand(100000,999999));
+			$paymentRequest->setTransID("Your payment prefix" . $Your_Payment_id."/".rand(100000,999999));
 			$paymentRequest->setAmount($Your_Amount*100);
 			$paymentRequest->setCurrency('EUR');
 			$paymentRequest->setRefNr($Your_Ref);
