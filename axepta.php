@@ -2,13 +2,12 @@
 
 class Axepta
 {
-    const PAYSSL = "https://paymentpage.epayment.bnpparibas/payssl.aspx";
-    const DIRECT = "https://paymentpage.epayment.bnpparibas/direct.aspx";
+    const PAYSSL = "https://paymentpage.axepta.bnpparibas/payssl.aspx";
+    const DIRECT = "https://paymentpage.axepta.bnpparibas/direct.aspx";
 	
-    const DIRECT3D = "https://paymentpage.epayment.bnpparibas/direct3d.aspx";
-    const CAPTURE = "https://paymentpage.epayment.bnpparibas/capture.aspx";
-    const CREDIT = "https://paymentpage.epayment.bnpparibas/credit.aspx";
-    const ABO = "https://paymentpage.axepta.bnpparibas/abo.aspx";
+    const DIRECT3D = "https://paymentpage.axepta.bnpparibas/direct3d.aspx";
+    const CAPTURE = "https://paymentpage.axepta.bnpparibas/capture.aspx";
+    const CREDIT = "https://paymentpage.axepta.bnpparibas/credit.aspx";
 	
     const INSTALMENT = "INSTALMENT";
     
