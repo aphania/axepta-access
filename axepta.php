@@ -58,6 +58,8 @@ class Axepta
 		'Language',
 		'Background',
 		'URLBack',
+		'CCSelect',
+		
 		
 		'MID',
 		'mid',
@@ -68,8 +70,12 @@ class Axepta
 		'Code',
 		'PCNr',
 		'CCNr',
+		'CCCVC',
 		'CCBrand',
 		'CCExpiry',
+		'TermURL',
+		'UserAgent',
+		'HTTPAccept',
 		'AboID',
 		'ACSXID',
 		'MaskedPan',
@@ -97,8 +103,8 @@ class Axepta
 		'PayID','TransID','Amount','Currency','MAC',
 		'RefNr','Amount3D','URLSuccess','URLFailure','URLNotify','Response','UserData','Capture','OrderDesc','ReqID',
 		'Plain','Custom','expirationTime','AccVerify','RTF','ChDesc',
-		'MID','XID','Status','Description','Code','PCNr','CCNr','CCBrand','CCExpiry',
-		'AboID','ACSXID','MaskedPan','CAVV','ECI','DDD','Type','Plain','Custom'
+		'MID','XID','Status','Description','Code','PCNr','CCNr','CCCVC','CCBrand','CCExpiry','TermURL','UserAgent',
+		'HTTPAccept','AboID','ACSXID','MaskedPan','CAVV','ECI','DDD','Type','Plain','Custom'
 		// 'CustomField1','CustomField2','CustomField3','CustomField4','CustomField5','CustomField6','CustomField7',
 		// 'CustomField8','CustomField9','CustomField10','CustomField11','CustomField12','CustomField13','CustomField14'
 		);
