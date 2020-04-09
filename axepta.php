@@ -296,36 +296,6 @@ class Axepta
         $this->parameters['merchantWalletId'] = $wallet;
     }
     
-    // instalmentData.number instalmentData.datesList instalmentData.transactionReferencesList instalmentData.amountsList paymentPattern
-    
-    // Methodes liees au paiement en n-fois
-    
-    public function setInstalmentDataNumber($number)
-    {
-        if (strlen($number) > 2) {
-            throw new InvalidArgumentException("instalmentData.number is too long");
-        }
-	if ( ($number < 2) || ($number > 50) ) {
-            throw new InvalidArgumentException("instalmentData.number invalid value : value must be set between 2 and 50");
-        }
-        $this->parameters['instalmentData.number'] = $number;
-    }
-    
-    public function setInstalmentDatesList($datesList)
-    {
-        $this->parameters['instalmentData.datesList'] = $datesList;
-    }
-    
-    public function setInstalmentDataTransactionReferencesList($transactionReferencesList)
-    {
-        $this->parameters['instalmentData.transactionReferencesList'] = $transactionReferencesList;
-    }
-    
-    public function setInstalmentDataAmountsList($amountsList)
-    {
-        $this->parameters['instalmentData.amountsList'] = $amountsList;
-    }
-    
     public function setPaymentPattern($paymentPattern)
     {
         $this->parameters['paymentPattern'] = $paymentPattern;
