@@ -59,6 +59,7 @@
 		$paymentResponse->setCryptKey($Your_CRYPTKEY);
 		$paymentResponse->setResponse($_GET);
 		if($paymentResponse->isValid() && $paymentResponse->isSuccessful()) { 
+			// all response parameters access with "get" prefix method
 			$TransID = $paymentResponse->getPayID();
 			$PCNr = $paymentResponse->getPCNr();
 			$CCBrand  = $paymentResponse->getCCBrand();
