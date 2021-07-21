@@ -207,10 +207,10 @@ class Axepta
         if ($l < 16)
             $key = str_repeat($key, ceil(16/$l));
 
-        // if (function_exists('mcrypt_encrypt'))
+        if (function_exists('mcrypt_encrypt'))
             $val = mcrypt_decrypt(MCRYPT_BLOWFISH, $key, $data, MCRYPT_MODE_ECB);
-        // else
-            // $val = openssl_decrypt($data, 'BF-ECB', $key, OPENSSL_RAW_DATA | OPENSSL_NO_PADDING);
+        else
+            $val = openssl_decrypt($data, 'BF-ECB', $key, OPENSSL_RAW_DATA | OPENSSL_NO_PADDING);
         return rtrim($val, "\0");
     }
 	
